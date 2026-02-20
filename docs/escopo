@@ -1,0 +1,66 @@
+# Habit Tracker System — Project Scope
+
+## 1. Overview
+
+The Habit Tracker System is a full‑stack application that allows users to register habits, track daily progress, and visualize statistics through charts and dashboards. The system also supports exporting data for external analysis using Python and Power BI.
+
+---
+
+## 2. In-Scope (What the system WILL include)
+
+The system will allow the user to:
+
+1. Create an account with email and password.
+2. Log in and maintain an authenticated session.
+3. Register habits with:
+   - name
+   - description
+   - category
+   - frequency (daily, weekly, monthly)
+4. List all registered habits.
+5. Mark habits as completed for the current day.
+6. View the completion history of each habit.
+7. Access statistics such as:
+   - completion percentage
+   - streaks (consecutive days)
+   - weekly/monthly charts
+8. View a dashboard with overall progress.
+9. Export data for external analysis (CSV/JSON).
+10. Receive simple insights based on collected data.
+
+---
+
+## 3. Out-of-Scope (What the system WILL NOT include in version 1.0)
+
+The following features are not part of the initial version:
+
+1. Push or email notifications.
+2. Advanced gamification (badges, levels, rewards).
+3. Integration with external apps (Google Fit, Apple Health).
+4. Native mobile application (Android/iOS).
+5. Social features (friends, ranking, sharing).
+6. Artificial intelligence recommendations.
+7. Multi-language support (only PT-BR/EN for now).
+8. Offline mode.
+
+---
+
+## 4. Target Users
+
+- Individuals who want to track personal habits.
+- Students monitoring study routines.
+- Users seeking productivity and discipline improvement.
+- People interested in visual progress tracking.
+
+---
+
+## 5. Version 1.0 Deliverables
+
+- Functional .NET API
+- SQL database structure
+- Responsive front-end (HTML/CSS/JS)
+- Basic dashboard with charts
+- Python scripts for data analysis
+- Power BI dashboard connected to the database
+- Complete documentation in `/docs`
+- Professional README in the project root
