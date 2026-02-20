@@ -1,0 +1,84 @@
+# Habit Tracker System — Requirements
+
+## 1. Functional Requirements (FR)
+
+These requirements describe what the system MUST do.
+
+### **FR01 — User Registration**
+The system must allow users to create an account using name, email, and password.
+
+### **FR02 — User Login**
+The system must allow users to authenticate using email and password.
+
+### **FR03 — Create Habit**
+The user must be able to register habits with:
+- name  
+- description  
+- category  
+- frequency (daily, weekly, monthly)
+
+### **FR04 — List Habits**
+The system must display all habits registered by the authenticated user.
+
+### **FR05 — Edit Habit**
+The user must be able to update habit information.
+
+### **FR06 — Delete Habit**
+The user must be able to remove a habit and its associated history.
+
+### **FR07 — Mark Habit as Completed**
+The user must be able to mark a habit as completed for the current day.
+
+### **FR08 — View Completion History**
+The system must store and display the completion history of each habit.
+
+### **FR09 — View Statistics**
+The system must calculate and display:
+- completion percentage  
+- streaks (consecutive days)  
+- weekly and monthly charts  
+
+### **FR10 — Dashboard**
+The system must provide a dashboard summarizing the user's progress.
+
+### **FR11 — Export Data**
+The system must allow exporting habit and completion data in CSV or JSON format.
+
+---
+
+## 2. Non-Functional Requirements (NFR)
+
+These requirements describe how the system MUST behave.
+
+### **NFR01 — Architecture**
+The backend must follow REST architectural principles.
+
+### **NFR02 — Security**
+Passwords must be stored using secure hashing algorithms.
+
+### **NFR03 — Performance**
+The API must respond within 200ms for simple operations under normal load.
+
+### **NFR04 — Database Integrity**
+The database must enforce referential integrity between tables.
+
+### **NFR05 — Usability**
+The front-end must be intuitive, responsive, and easy to navigate.
+
+### **NFR06 — Scalability**
+The system must support future expansion without major restructuring.
+
+### **NFR07 — Version Control**
+All code must be versioned using Git and hosted on GitHub with organized commits.
+
+### **NFR08 — Documentation**
+The project must include:
+- a complete README  
+- all documentation stored in `/docs`  
+- UML diagrams in `/docs/diagramas`  
+
+### **NFR09 — Compatibility**
+The system must run on modern browsers (Chrome, Edge, Firefox).
+
+### **NFR10 — Data Export Compatibility**
+Exported data must be readable by Python scripts and Power BI.
