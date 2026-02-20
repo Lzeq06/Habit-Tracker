@@ -1,0 +1,63 @@
+# Habit Tracker System — Entity Relationship Model (ERD)
+
+This document describes the database structure of the Habit Tracker system, including entities, attributes, and relationships.
+
+---
+
+## 1. Entities and Attributes
+
+### **1.1 User**
+| Field         | Type      | Description                     |
+|---------------|-----------|---------------------------------|
+| UserId        | int (PK)  | Unique identifier for the user |
+| Name          | string    | User's full name               |
+| Email         | string    | User's email address           |
+| PasswordHash  | string    | Encrypted password             |
+| CreatedAt     | DateTime  | Account creation date          |
+
+---
+
+### **1.2 Habit**
+| Field         | Type      | Description                         |
+|---------------|-----------|-------------------------------------|
+| HabitId       | int (PK)  | Unique identifier for the habit     |
+| UserId        | int (FK)  | Reference to User                   |
+| CategoryId    | int (FK)  | Reference to Category               |
+| Name          | string    | Habit name                          |
+| Description   | string    | Habit description                   |
+| Frequency     | string    | daily / weekly / monthly            |
+| CreatedAt     | DateTime  | Creation date                       |
+| IsActive      | bool      | Whether the habit is active         |
+
+---
+
+### **1.3 Category**
+| Field         | Type      | Description                         |
+|---------------|-----------|-------------------------------------|
+| CategoryId    | int (PK)  | Unique identifier for the category  |
+| Name          | string    | Category name                       |
+
+---
+
+### **1.4 HabitCompletion**
+| Field         | Type      | Description                         |
+|---------------|-----------|-------------------------------------|
+| CompletionId  | int (PK)  | Unique identifier for completion    |
+| HabitId       | int (FK)  | Reference to Habit                  |
+| CompletionDate| DateTime  | Date the habit was completed        |
+
+---
+
+## 2. Relationships
+
+- **User 1 → N Habit**  
+  A user can have multiple habits.
+
+- **Category 1 → N Habit**  
+  A category can group multiple habits.
+
+- **Habit 1 → N HabitCompletion**  
+  A habit can have multiple completion records.
+
+---
+
